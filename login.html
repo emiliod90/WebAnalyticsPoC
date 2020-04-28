@@ -1,43 +1,88 @@
 <!DOCTYPE html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Page two Google Optimize Test</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <div class="page">
-            <header>
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="login.html">Login</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div>
-                    <div class="centerdivs" style="margin-top: 60px;">
-                        <h2>Welcome to the login page ✌</h2>
-                        <h4>Thank you for taking part in this Experiment</h4>
-                        <p>We are now one step close to world domination. Please either <b style="color: red;">log in</b> below or 🚀 off.</p>
-                    </div>
-                    <div class="centerdivs">
-                        <button onclick="window.location.href='loading.html';" type="button" class="animated login-btn">Login</button>
-                    </div>
-                    <div style="margin-top: 150px;">
-                        <p style="font-size: 14px;">The tags on this page include a <b>page tracking tag</b> and a <b>button click tag</b>. 
-                            The results from this experiment will reveal how many visitors to the login page actually clicked login.</p>
-                        <p style="font-size: 14px;">If you open the developer tool bar you can see the tag reference in the head.
-                            If you have the Google Optimize, Wappalyzer or WASP inspector running you should pick up the tags. </p>
-                    </div>
+
+<head>
+    <meta charset="utf-8">
+
+    <script>
+        dataLayer = [{
+            'expId': '82YMeKbmQ8KWpe_5LgTZCQ',
+            'expVar': '0'
+        }];
+    </script>
+
+    <!-- Analytics tracking code with Optimize plugin -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-146490649-1', 'auto'); //Insert GA Property ID
+        ga('require', 'GTM-5KTDXBC'); //Insert Optimize Container ID
+    </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WQ8LWJQ');</script>
+    <!-- End Google Tag Manager -->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page two Google Optimize Test</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WQ8LWJQ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="page">
+        <header>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="login.html">Login</a>
+                    </li>
+                </ul>
+            </nav>
+            <div>
+                <div class="centerdivs" style="margin-top: 60px;">
+                    <h2>Welcome to the login page ✌</h2>
+                    <h4>Thank you for taking part in this Experiment</h4>
+                    <p>We are now one step close to world domination. Please either <b style="color: red;">log in</b>
+                        below or 🚀 off.</p>
                 </div>
-            </header>
-        </div>
-    </body>
+                <div class="centerdivs">
+                    <button onclick="window.location.href='loading.html';" type="button"
+                        class="animated login-btn">Login</button>
+                </div>
+                <div style="margin-top: 150px;">
+                    <p style="font-size: 14px;">The tags on this page include a <b>page tracking tag</b> and a <b>button
+                            click tag</b>.
+                        The results from this experiment will reveal how many visitors to the login page actually
+                        clicked login.</p>
+                    <p style="font-size: 14px;">If you open the developer tool bar you can see the tag reference in the
+                        head.
+                        If you have the Google Optimize, Wappalyzer or WASP inspector running you should pick up the
+                        tags. </p>
+                </div>
+            </div>
+        </header>
+    </div>
+</body>
+
 </html>
