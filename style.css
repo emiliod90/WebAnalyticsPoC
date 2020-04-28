@@ -1,0 +1,173 @@
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.page {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Nav */
+nav ul {
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    background-color: #fff;
+}
+
+nav ul li {
+    padding: 1rem;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: silver;
+    text-decoration: none;
+    font-weight: 700;
+}
+/*Nav End*/
+
+/* Content */
+.centerdivs {
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+}
+
+
+/* The clock cards */
+#time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#time div {
+    position: relative;
+    margin: 0 5px;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+}
+
+#time div span {
+    position: relative;
+    display: block;
+    width: 150px;
+    height: 120px;
+    color: white;
+    font-weight: 300;
+    font-size: 2em;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.2);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    z-index: 10; 
+}
+
+#time div span:nth-child(2) {
+    height: 30px;
+    letter-spacing: 0.2em;
+    font-weight: 500;
+    font-size: 0.7em;
+    z-index: 9;
+    box-shadow: none;
+    text-transform: uppercase;
+}
+
+#hour-card {
+    background: #2962ff;
+}
+
+#minute-card {
+    background: #448aff;
+}
+
+/* Button */
+
+.login-btn {
+    margin: 20px 0px;
+    background: #1FCE6D;
+    border: 0;
+    width: 350px;
+    height: 45px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 24px;
+    font-family: "Cookie";
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.login-btn:hover {
+    background: #16aa56;
+    animation-name: shake;
+}
+
+.animated {
+    animation-fill-mode: both;
+    animation-duration: 1s;
+}
+
+/* Animation */
+/* https://codepen.io/jonmilner/pen/hDHuo */
+
+.loading_body {
+    height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(#ecf0f1, #fff);
+}
+
+@-webkit-keyframes rotate {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate {
+    to {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  /* Variables */
+  /* Loading Icon */
+  .loading {
+    width: 100px;
+    height: 100px;
+  }
+  .loading__ring {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+  .loading__ring:first-child {
+    -webkit-transform: skew(30deg, 20deg);
+            transform: skew(30deg, 20deg);
+  }
+  .loading__ring:last-child {
+    -webkit-transform: skew(-30deg, -20deg) scale(-1, 1);
+            transform: skew(-30deg, -20deg) scale(-1, 1);
+  }
+  .loading__ring:last-child svg {
+    -webkit-animation-delay: -0.5s;
+            animation-delay: -0.5s;
+  }
+  .loading__ring svg {
+    -webkit-animation: rotate 1s linear infinite;
+            animation: rotate 1s linear infinite;
+    fill: rgba(0, 0, 0, 0.2);
+  }
+  
